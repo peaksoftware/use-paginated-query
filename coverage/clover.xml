@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1744418066159" clover="3.2.0">
-  <project timestamp="1744418066159" name="All files">
-    <metrics statements="86" coveredstatements="86" conditionals="13" coveredconditionals="13" methods="9" coveredmethods="8" elements="108" coveredelements="107" complexity="0" loc="86" ncloc="86" packages="1" files="1" classes="1"/>
+<coverage generated="1744421888459" clover="3.2.0">
+  <project timestamp="1744421888459" name="All files">
+    <metrics statements="93" coveredstatements="93" conditionals="13" coveredconditionals="13" methods="9" coveredmethods="8" elements="115" coveredelements="114" complexity="0" loc="93" ncloc="93" packages="1" files="1" classes="1"/>
     <file name="index.ts" path="/home/heez/development/use-paginated-query/src/index.ts">
-      <metrics statements="86" coveredstatements="86" conditionals="13" coveredconditionals="13" methods="9" coveredmethods="8"/>
+      <metrics statements="93" coveredstatements="93" conditionals="13" coveredconditionals="13" methods="9" coveredmethods="8"/>
       <line num="1" count="1" type="stmt"/>
       <line num="2" count="1" type="stmt"/>
       <line num="3" count="1" type="stmt"/>
@@ -90,6 +90,13 @@
       <line num="84" count="7" type="stmt"/>
       <line num="85" count="7" type="stmt"/>
       <line num="86" count="7" type="stmt"/>
+      <line num="87" count="1" type="stmt"/>
+      <line num="88" count="1" type="stmt"/>
+      <line num="89" count="1" type="stmt"/>
+      <line num="90" count="1" type="stmt"/>
+      <line num="91" count="1" type="stmt"/>
+      <line num="92" count="1" type="stmt"/>
+      <line num="93" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

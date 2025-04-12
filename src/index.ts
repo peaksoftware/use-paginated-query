@@ -27,13 +27,13 @@ interface PaginatedQueryProps<
   ) => UseQueryOptions<TQueryFnData, Error, TData, TQueryKey>[];
 }
 
-export function usePage(pagingSearchParam = "page") {
+function usePage(pagingSearchParam = "page") {
   const searchParam = useSearchParams().get(pagingSearchParam);
   const page = isValidPagingSearchParam(searchParam) ? Number(searchParam) : 1;
   return page;
 }
 
-export function usePaginatedQuery<
+function usePaginatedQuery<
   TQueryFnData,
   Error,
   TData = TQueryFnData,
@@ -52,7 +52,7 @@ export function usePaginatedQuery<
   return useQuery(query(page));
 }
 
-export function usePagingControls(pagingSearchParam = "page") {
+function usePagingControls(pagingSearchParam = "page") {
   const page = usePage(pagingSearchParam);
   const pathname = usePathname();
   const router = useRouter();
@@ -84,3 +84,10 @@ export function usePagingControls(pagingSearchParam = "page") {
 
   return { next, prev, nextUrl: getNextUrl(), prevUrl: getPrevUrl() };
 }
+
+export {
+  usePaginatedQuery,
+  usePage,
+  usePagingControls,
+  isValidPagingSearchParam,
+};
