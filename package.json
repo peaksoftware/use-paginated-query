@@ -18,6 +18,9 @@
   },
   "author": "alex@peaksoftware.dev",
   "license": "MIT",
+  "repository": {
+    "url": "https://github.com/peaksoftware/use-paginated-query"
+  },
   "peerDependencies": {
     "@tanstack/react-query": "^5",
     "next": "^13.4 || ^14 || ^15",
