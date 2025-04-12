@@ -8,6 +8,35 @@ A set of React hooks for handling pagination with Next.js and Tanstack Query.
 npm install use-paginated-query
 ```
 
+## Usage
+
+```tsx
+"use client";
+import { usePaginatedQuery, usePagingControls } from "use-paginated-query";
+
+export default function Page() {
+  const { data } = usePaginatedQuery({
+    query: (page) => ({
+      queryKey: ["data", page],
+      queryFn: async () => {
+        const res = await fetch(`/api/data?page=${page}`);
+        return res.json();
+      },
+    }),
+  });
+
+  const { next, prev } = usePagingControls();
+
+  return (
+    <div>
+      <p>Data: {JSON.stringify(data)}</p>
+      <button onClick={prev}>Previous</button>
+      <button onClick={next}>Next</button>
+    </div>
+  );
+}
+```
+
 ## Requirements
 
 - React 17+
@@ -95,39 +124,6 @@ export function PagingControls() {
       <button onClick={next}>Next</button>
       <p>Next URL: {nextUrl}</p>
       <p>Prev URL: {prevUrl}</p>
-    </div>
-  );
-}
-```
-
-## Usage
-
-Combine both hooks for a complete pagination experience:
-
-```tsx
-"use client";
-import { usePaginatedQuery, usePagingControls } from "use-paginated-query";
-
-export default function Page() {
-  const { data, isLoading } = usePaginatedQuery({
-    query: (page) => ({
-      queryKey: ["data", page],
-      queryFn: async () => {
-        const res = await fetch(`/api/data?page=${page}`);
-        return res.json();
-      },
-    }),
-  });
-
-  const { next, prev } = usePagingControls();
-
-  if (isLoading) return <p>Loading...</p>;
-
-  return (
-    <div>
-      <p>Data: {JSON.stringify(data)}</p>
-      <button onClick={prev}>Previous</button>
-      <button onClick={next}>Next</button>
     </div>
   );
 }
