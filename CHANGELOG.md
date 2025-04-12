@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/peaksoftware/use-paginated-query/compare/v1.0.0...v1.0.1) (2025-04-12)
+
+
+### Bug Fixes
+
+* trigger build ([f28ac66](https://github.com/peaksoftware/use-paginated-query/commit/f28ac6654ffbedc661c3c412fbe6a24c58e4291e))
+
 # 1.0.0 (2025-04-12)
 
 

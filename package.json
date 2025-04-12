@@ -1,6 +1,6 @@
 {
   "name": "use-paginated-query",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React hooks for fetching paginated data that synchronize with your router",
   "type": "module",
   "module": "./dist/index.mjs",
