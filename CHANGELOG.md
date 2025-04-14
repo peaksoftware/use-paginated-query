@@ -1,3 +1,11 @@
+# [1.3.0](https://github.com/peaksoftware/use-paginated-query/compare/v1.2.0...v1.3.0) (2025-04-14)
+
+
+### Features
+
+* **build:** add missing package ([f8864d5](https://github.com/peaksoftware/use-paginated-query/commit/f8864d563c8e6dfb31d965be5ceaeacf4fdd64ea))
+* **build:** fix semantic-release preparecmd ([08bcaae](https://github.com/peaksoftware/use-paginated-query/commit/08bcaae4f5132b188bc3acfe962ecef875671737))
+
 # [1.2.0](https://github.com/peaksoftware/use-paginated-query/compare/v1.1.0...v1.2.0) (2025-04-14)
 
 
