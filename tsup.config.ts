@@ -8,7 +8,7 @@ export default defineConfig({
   clean: true,
   treeshake: true,
   minify: "terser",
-  external: ["react", "next/navigation", "@tanstack/react-query"],
+  external: ["react", "react-dom", "next/navigation", "@tanstack/react-query"],
   esbuildOptions(options) {
     options.conditions = ["module"];
   },
